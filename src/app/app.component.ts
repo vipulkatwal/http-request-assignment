@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DataDisplayComponent } from './data-display/data-display.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [DataDisplayComponent], // Include the DataDisplayComponent as a dependency
+  template: '<app-data-display></app-data-display>', // Render the data display component
 })
-export class AppComponent {
-  title = 'http-request-assignment';
-}
+export class AppComponent {}
